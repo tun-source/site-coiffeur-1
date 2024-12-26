@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coiffeur Homme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coiff Homme</h1>
+        <nav>
+            <a href="#services-section">Nos Services</a>
+            <a href="#salon-section">Notre Salon</a>
+            <a href="#contact">Nous Contacter</a>
+            <a href="#map">Où sommes-nous ?</a>
+        </nav>
+    </header>
+
+    <div id="video-banner">
+      <iframe width="100%" height="500"
+              src="https://www.youtube.com/embed/znK8vmnDGnY?autoplay=1&loop=1&playlist=znK8vmnDGnY&mute=1&modestbranding=1&controls=0&showinfo=0&rel=0&iv_load_policy=3"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+    
+  
+  
+   <!-- Section des Services -->
+   <div class="section" id="services-section">
+    <h2>Nos Services</h2>
+    <ul id="services-list" >
+      <!-- Les cartes de service seront insérées ici -->
+       </ul>
+    </div>
+  </div>
+  
+
+
+
+<!-- Section du salon -->
+<div class="section" id="salon-section">
+  <h2>Notre Salon</h2>
+  <div id="salon-images">
+      <!-- Images locales affichées normalement -->
+     
+  </div>
+
+  <!-- Bande défilante d'images -->
+    <!-- Bande défilante d'images avec flèches -->
+    <div class="carousel-container">
+      <button class="carousel-arrow left-arrow">&#10094;</button>
+      <div class="image-carousel">
+        <img src="images/image1.jpg" alt="Image du salon 1">
+        <img src="images/image2.jpg" alt="Image du salon 2">
+          <img src="images/image3.jpg" alt="Image du salon 3">
+          <img src="images/image4.jpg" alt="Image du salon 4">
+      </div>
+      <button class="carousel-arrow right-arrow">&#10095;</button>
+  </div>
+</div>
+
+
+
+    <!-- Section des informations de contact -->
+    
+    <div class= "section" id="contact">
+      <h2>Nous contacter</h2>
+      <ul>
+        <li>
+          <i class="fas fa-phone"></i> <strong>Téléphone 1 :</strong> <span>01 23 45 67 89</span>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i> <strong>Téléphone 2 :</strong> <span>06 12 34 56 78</span>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i> <strong>Instagram :</strong> <a href="https://www.instagram.com/tonsalon" target="_blank">@tonsalon</a>
+        </li>
+        <li>
+          <i class="fas fa-calendar-alt"></i> <strong>Planity :</strong> <a href="https://www.planity.com/tonsalon" target="_blank">Réservez ici</a>
+        </li>
+      </ul>
+    
+  </div>
+
+    <!-- Section de la carte -->
+    <div id="map" style="height: 400px;"></div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Ajouter les fichiers CSS et JS de Leaflet à la fin du body -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
